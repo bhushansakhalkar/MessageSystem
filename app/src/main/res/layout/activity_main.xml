@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Messaging Service"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="#D31212"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_text_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter your username"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/edit_text_password"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter your password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textPassword"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/text_view_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New User?"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textColor="#0FA6EB"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
